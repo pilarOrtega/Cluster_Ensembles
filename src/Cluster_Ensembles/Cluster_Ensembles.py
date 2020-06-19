@@ -291,8 +291,8 @@ def cluster_ensembles(cluster_runs, hdf5_file_name = None, verbose = False, N_cl
     score = np.empty(0)
 
     if cluster_runs.shape[1] > 10000:
-        consensus_functions = [HGPA, MCLA]
-        function_names = ['HGPA', 'MCLA']
+        consensus_functions = [MCLA]
+        function_names = ['MCLA']
         print("\nINFO: Cluster_Ensembles: cluster_ensembles: "
               "due to a rather large number of cells in your data-set, "
               "using only 'HyperGraph Partitioning Algorithm' (HGPA) "
